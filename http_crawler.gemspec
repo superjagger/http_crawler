@@ -11,21 +11,15 @@ Gem::Specification.new do |spec|
 
   spec.summary = %q{http 爬虫。}
   spec.description = %q{初级开发工程师，基于 http 写的爬虫扩展包。请不要随意下载里面有很多坑。}
-  spec.homepage = "https://rubygems.org/gems/http_crawler"
-  spec.license = "MIT"
+  spec.homepage = "https://github.com/superjagger/http_crawler"
 
-  spec.metadata = {
-      "source_code_uri" => "https://github.com/superjagger/http_crawler"
-  }
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "https://rubygems.org"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
+  spec.metadata["allowed_push_host"] = "https://rubygems.org"
+
+  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["source_code_uri"] = "https://github.com/superjagger/http_crawler.git"
+  spec.metadata["changelog_uri"] = "https://github.com/superjagger/http_crawler/blob/main/CHANGELOG.md"
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
