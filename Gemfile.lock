@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    guess_html_encoding (0.0.11)
+    mini_portile2 (2.4.0)
+    nokogiri (1.10.9)
+      mini_portile2 (~> 2.4.0)
+    ruby-readability (0.7.0)
+      guess_html_encoding (>= 0.0.4)
+      nokogiri (>= 1.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ruby-readability (~> 0.7.0)
+
+BUNDLED WITH
+   2.1.4
